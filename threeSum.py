@@ -1,3 +1,4 @@
+
 class Solution(object):
     def threeSum(self, nums):
         """
@@ -9,7 +10,7 @@ class Solution(object):
         result = [] # This line intializes an empty list called 'result' to store the unique triplets that sum up to zero
         # This for loop iterates through the input list 'nums', but stop at the third -to-last element.
         for i in range(len(nums) - 2):
-            # This 'if' statement checks if the current element 'nums[i]' is equal to the previous element 'nums[i-1]' and ensures that 'i' is greater than 0. If this condition is true,it means that we have encountered a duplicate value, so weto the next iteration of the loop to skip it.
+            # This 'if' statement checks if the current element 'nums[i]' is equal to the previous element 'nums[i-1]' and ensures that 'i' is greater than 0. If this condition is true,it means that we have encountered a duplicate value, so we go to the next iteration of the loop to skip it.
             if i > 0 and nums[i] == nums[i - 1]:
                 continue  # Skip duplicate values to avoid duplicate triplets
             #This line initializes two pointers, 'left' and 'right' , which are used to scan the element from the left and right ends of the sorted array
@@ -38,6 +39,9 @@ class Solution(object):
                 else:
                     right -= 1
         
+
+
+
         return result
 if __name__=="__main__":
     solution = Solution()   
